@@ -1,0 +1,175 @@
+@import "mixin";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    @include olcu (100%, black);
+    position: fixed;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            justify-content: space-around;
+            padding: 10px;
+
+            .h1 {
+                @include div (150px, 60px, black);
+                @include flex;
+                flex-direction: column;
+                border: 2px solid white;
+                border-radius: 15px;
+                color: white;
+                cursor: pointer;
+
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+
+                li {
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+
+
+            .icon {
+                @include div (200px, 60px, black);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-around;
+
+                i {
+                    font-size: 30px;
+                    color: white;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+header {
+    width: 100%;
+    background-image: url('https://www.timeoutdubai.com/cloud/timeoutdubai/2022/08/26/chicken-lollipo-Gypsy-Chinese-1000x750.jpg');
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        @include container;
+        .cont{
+            @include cont;
+            padding: 200px;
+     .head{
+        width: 900px;
+       
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        padding: 200px 0;
+
+        h3{
+            font-size: 70px;
+            font-family: 'Satisfy', cursive;
+        }
+        h1{
+            font-size: 80px;
+            font-family: 'Anton', sans-serif;
+        }
+        .but{
+            width: 150px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 15px;
+            color: orange;
+            cursor: pointer;
+            text-align: center;
+
+        }
+     }
+    }
+    }
+}
+section{
+    width: 100%;
+   
+   // overflow: hidden;
+   .container{
+    @include container;
+    .cont{
+        @include cont;
+        .sec-a{
+            width: 100%;
+            height: 700px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            .sec1{
+                width: 500px;
+                height: 350px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 20px;
+                h2{
+                    font-size: 30px;
+                    font-family: 'Satisfy', cursive;
+                    color: brown;
+                }
+                h1{
+                    font-size: 50px;
+                    font-family: 'Anton', sans-serif;
+                }
+                p{
+                    font-size: 18px;
+                    color: gray;
+                }
+                .p1{
+                    color: gray;
+                    font-size: 16px;
+                }
+            }
+            .sec2{
+                width: 400px;
+                height: 400px;
+             
+                border-radius: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+   }
+}

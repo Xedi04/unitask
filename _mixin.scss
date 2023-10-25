@@ -1,0 +1,34 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin olcu ($en, $reng){
+width: $en;
+background-color: $reng;
+}
+
+
+
+@mixin container{
+    max-width: 1400px;
+margin: auto;
+padding: 0px 32px;
+/*background-color: brown;*/
+}
+
+@mixin cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    //background-color: ;
+}
+
+@mixin div ($en, $hun, $reng){
+
+    width: $en;
+    height: $hun;
+    background-color: $reng;
+}
+ 
